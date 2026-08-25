@@ -38,7 +38,14 @@ h1 strong{color:var(--blue)}
 .card{width:320px;height:200px;border-radius:18px;background:linear-gradient(145deg,#124b99,#082e67);color:#fff;padding:25px;box-shadow:0 25px 45px rgba(10,50,110,.25);transform:rotate(-7deg)}
 .card small{opacity:.8}.card .num{margin-top:28px;font-size:18px;letter-spacing:3px}.card .brand{margin-top:35px;font-weight:800}
 .phone{position:absolute;width:118px;height:220px;background:#121820;border:6px solid #222;border-radius:22px;right:7%;bottom:2%;transform:rotate(8deg);padding:8px}
-.phone-screen{height:100%;background:#fff;border-radius:15px;padding:12px;font-size:9px}
+.phone-screen{
+  height:100%;
+  background:#fff;
+  border-radius:15px;
+  padding:10px;
+  font-size:8px;
+  line-height:1.35;
+  overflow:hidden;}
 .qr{width:52px;height:52px;background:repeating-conic-gradient(#111 0 25%,#fff 0 50%) 50%/10px 10px;margin:12px auto}
 .quick{margin-top:-28px;position:relative;z-index:5}
 .quick-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
@@ -62,7 +69,16 @@ h1 strong{color:var(--blue)}
 @media(max-width:850px){
   .nav{display:none}.mobile-menu{display:block;border:0;background:none;font-size:23px}
   .hero{padding:42px 0 35px}.hero-grid{grid-template-columns:1fr;gap:20px}h1{font-size:30px}
-  .card-visual{height:230px;order:-1}.card{width:265px;height:165px}.phone{width:92px;height:175px}
+  .card-visual{height:230px;order:-1}.card{width:265px;height:165px}.phone{
+  width:92px;
+  height:175px;
+  right:4%;
+  bottom:2%;
+}
+
+.phone-screen{
+  overflow:hidden;
+}
   .quick{margin-top:0}.quick-grid{grid-template-columns:repeat(2,1fr);padding:14px}
   .quick-item:last-child{grid-column:span 2}.section{padding:48px 0}.rules,.grid3,.steps{grid-template-columns:1fr}
   .container{padding:0 16px}.section-title h2{font-size:23px}
